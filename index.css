@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+main{
+    min-height: 100vh;
+    color: rgba(21, 20, 57, 0.4);    
+   display: grid;
+   place-items: center;
+}
+
+button{
+    border: 5px thin #fff;
+    box-sizing: border-box;
+    border-radius: 100px;
+    color: #1E0E62;
+    padding: auto;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+h1{
+    color: #1E0E62;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.box{
+    display: flex;
+    margin: 0 auto;
+}
+
+@media (max-width: 971px) {
+    .box{
+        flex-direction: column;
+    }
+}
+
+.text-box{
+    padding: 100px;
+    min-width: 50%;
+}
+
+.text-box * {
+    max-width: 35ch;
+}
+
+.box img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+
+}
+
+.image-box{
+    min-width: 50%;
+}
